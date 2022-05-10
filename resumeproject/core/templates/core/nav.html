@@ -1,0 +1,15 @@
+{% load static %}
+<div class="nav-container">
+    <div class="text-center">
+        <img src="{% static 'css/profile.png' %}" alt="" class="img-fluid --img1">
+    </div>
+    <h1 class="name text-white-50 fw-bold">David Smith</h1>
+    <hr class="bg-danger mx-auto" width="120px">
+            <ul class="links text-center">
+                <li><a href="{% url 'home' %}" class="link">Home</a></li>
+                <li><a href="{% url 'services' %}" class="link">Services</a></li>
+                <li><a href="{% url 'skills' %}" class="link">Skills</a></li>
+                <li><a href="{% url 'contact' %}" class="link">Contact</a></li>
+            </ul>
+</div>
+    

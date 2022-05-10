@@ -1,0 +1,94 @@
+{% extends 'core/base.html' %}
+
+{% block nav %}
+    {% include 'core/nav.html' %}
+{% endblock nav %}
+    
+    {% block content %}
+    <style>
+        .--icon{
+            font-size: 2rem;
+            color: rgb(1, 255, 149);
+            display: flex;
+            margin: 1rem auto!important;
+            width: 2.5rem;
+        }
+        .text-white{
+            text-align: center;
+            font-family:  sans-serif,sans-serif,cursive,'Courier New', Courier, monospace,monospace;
+            line-height: 1.5rem;
+        }
+        .col-md-4{
+            padding: 1rem 0.45rem;
+            box-shadow: 0px 0px 5px rgb(3, 68, 248);
+        }
+        .col-md-10{
+            height: 35rem;
+            position: relative;
+        }
+        .container-2{
+            width: 90%;
+            margin: 0rem auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .--tittle{
+            font-size: 1.8rem;
+            font-family: sans-serif,sans-serif,cursive,'Courier New', Courier, monospace,monospace;
+            color: rgb(255, 94, 0)!important;
+        }
+    </style>
+           <div class="container-2">
+           <div class="row --services">
+               <div class="col-md-4">
+                <i class="fa-solid fa-trophy --icon"></i>
+                   <p class="text-danger fw-bold text-center --tittle">SEO</p>
+                   <p class="text-white">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.Fugit, optio nihil officiis.
+                   </p>
+               </div>
+               <div class="col-md-4">
+                   <i class="fa fa-paint-brush --icon" aria-hidden="true"></i>
+                <p class="text-danger fw-bold text-center --tittle">Web Design</p>
+                <p class="text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.Fugit, optio nihil officiis.
+                </p>
+               </div>
+               <div class="col-md-4">
+                <i class="fa-solid fa-code --icon"></i>
+                <p class="text-danger fw-bold text-center --tittle">Web Development</p>
+                <p class="text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.Fugit, optio nihil officiis.
+                </p>
+               </div>
+           </div>
+
+           <div class="row">
+            <div class="col-md-4">
+                <i class="fa-brands fa-android --icon"></i>
+                <p class="text-danger fw-bold text-center --tittle">Andriod</p>
+                <p class="text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.Fugit, optio nihil officiis.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa-brands fa-apple --icon"></i>
+                <p class="text-danger fw-bold text-center --tittle">IOS</p>
+                <p class="text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.Fugit, optio nihil officiis.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa-solid fa-database --icon"></i>
+                <p class="text-danger fw-bold text-center --tittle">Hosting</p>
+                <p class="text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.Fugit, optio nihil officiis.
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}
+        
+        
